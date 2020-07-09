@@ -1,0 +1,8 @@
+{
+  "editor.fontFamily": "\"Victor Mono\", Consolas, 'Courier New', monospace",
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/src-tauri/target": true,
+    "**/src-tauri/WixTools": true
+  }
+}
