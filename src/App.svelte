@@ -1,16 +1,19 @@
 <script>
-	let count = 0;
+  import { timer } from './timer';
 
-	$: if (count >= 10) {
-		alert(`count is dangerously high!`);
-		count = 9;
-	}
+  let count = 0;
 
-	function handleClick() {
-		count += 1;
-	}
+  $: if (count >= 10) {
+    alert(`count is dangerously high!`);
+    count = 9;
+  }
+
+  function handleClick() {
+    count += 1;
+  }
 </script>
 
+  time: {$timer}s
 <button on:click={handleClick}>
-	Clicked {count} {count === 1 ? 'time' : 'times'}
+  Clicked {count} {count === 1 ? 'time' : 'times'}
 </button>
