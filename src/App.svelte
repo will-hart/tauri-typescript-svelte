@@ -1,15 +1,15 @@
 <script>
-  import { timer } from './timer';
+  import { timer } from './timer'
 
-  let count = 0;
+  let count = 0
 
   $: if (count >= 10) {
-    alert(`count is dangerously high!`);
-    count = 9;
+    alert(`count is dangerously high!`)
+    count = 9
   }
 
   function handleClick() {
-    count += 1;
+    count += 1
   }
 </script>
 
