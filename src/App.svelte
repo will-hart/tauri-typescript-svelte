@@ -1,16 +1,15 @@
+<svelte:options immutable={true} />
+
 <script>
-	let count = 0;
 
-	$: if (count >= 10) {
-		alert(`count is dangerously high!`);
-		count = 9;
-	}
+  import { timer } from './timer'
+  import produce from 'immer'
+  import testStore from './stores/testStore'
+  const { actions, subscribe: test } = testStore
 
-	function handleClick() {
-		count += 1;
-	}
 </script>
 
-<button on:click={handleClick}>
-	Clicked {count} {count === 1 ? 'time' : 'times'}
+  time: {$timer}s
+<button on:click={actions.test}>
+  Clicked {$testStore.tested} times
 </button>

@@ -4,5 +4,6 @@
     "**/node_modules": true,
     "**/src-tauri/target": true,
     "**/src-tauri/WixTools": true
-  }
+  },
+  "typescript.tsdk": "node_modules\\typescript\\lib"
 }

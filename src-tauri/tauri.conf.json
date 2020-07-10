@@ -7,49 +7,13 @@
   },
   "ctx": {},
   "tauri": {
-    "cli": {
-      "description": "Tauri communication example",
-      "args": [
-        {
-          "short": "c",
-          "name": "config",
-          "takesValue": true,
-          "description": "Config path"
-        },
-        {
-          "short": "t",
-          "name": "theme",
-          "takesValue": true,
-          "description": "App theme",
-          "possibleValues": ["light", "dark", "system"]
-        },
-        {
-          "short": "v",
-          "name": "verbose",
-          "multipleOccurrences": true,
-          "description": "Verbosity level"
-        }
-      ],
-      "subcommands": {
-        "update": {
-          "description": "Updates the app",
-          "args": [
-            {
-              "short": "b",
-              "name": "background",
-              "description": "Update in background"
-            }
-          ]
-        }
-      }
-    },
     "embeddedServer": {
       "active": true
     },
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "com.tauri.dev",
+      "identifier": "com.willhart.io",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
@@ -78,7 +42,7 @@
       "all": true
     },
     "window": {
-      "title": "Tauri App",
+      "title": "War Supply",
       "width": 800,
       "height": 600,
       "resizable": true,
