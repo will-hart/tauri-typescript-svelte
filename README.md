@@ -23,6 +23,12 @@ built using the `buildImmerActionStore` found in `immerActionStore.ts`.
 Refer to the [tauri docs](https://tauri.studio/docs) for more information
 on configuring the application.
 
+## Tailwind CSS
+
+The `tailwind` branch tracks the master branch but with `tailwind CSS`
+integrated. Start from this branch of the template if you want Tailwind
+CSS integration.
+
 ## License
 
 MIT, contributions welcome.
