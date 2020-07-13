@@ -3,6 +3,7 @@ import html from 'rollup-plugin-html2'
 import livereload from 'rollup-plugin-livereload'
 import resolve from '@rollup/plugin-node-resolve'
 import svelte from 'rollup-plugin-svelte'
+import sveltePreprocess from 'svelte-preprocess'
 import { terser } from 'rollup-plugin-terser'
 import typescript from '@rollup/plugin-typescript'
 
@@ -20,6 +21,7 @@ export default {
     svelte({
       // enable run-time checks when not in production
       dev: !production,
+      preprocess: sveltePreprocess({ postcss: true }),
       // we'll extract any component CSS out into
       // a separate file - better for performance
       css: (css) => {
